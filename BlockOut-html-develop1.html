@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<style> 
+
+body { 
+	background-color: #0071B0; } /* 흰색 #fff, 하늘 #1F82BA, 파랑 #0067A1, 회색 #333 */
+
+#header {
+		background-color: #E5E8EF;
+		width: 1000px; 
+		height: 100px;
+		padding: 0px; /*안쪽여백*/
+		margin: auto; /*바깥쪽여백 자동 정렬이 가운데정렬*/
+		box-sizing: border-box;  /*여백을 넣어도 박스가 안 커지게 하는 코드*/ 
+		border-radius: 12px 12px 0px 0px;
+		text-align: center; color: gray; line-height: 100px; 
+		display: flex; justify-content: center;}
+		
+#header img { /*로고 영역 잡아주기*/
+		height: 54px;
+ 		padding: 0px; 
+		display: block; margin: auto; 
+		}
+
+#contents {
+		background-color: #FFF;
+		width: 1000px; 
+		min-height: 430px;  /*텍스트 컨텐츠에 따라 달라지게 변경*/
+		/*상대 단위,  vh. 뷰포트 세로 크기의 100% 차지. */  
+		padding-left: 36px; padding-top: 44px; padding-right: 20px; 
+		padding-bottom: 30px;/*안쪽여백*/
+		margin: auto; /*바깥쪽여백 자동 정렬이 가운데정렬*/
+		box-sizing: border-box;  /*여백을 넣어도 박스가 안 커지게 하는 코드*/
+		border-radius: 0px 0px 12px 12px; 
+		letter-spacing: -0.04em; 
+}
+
+#contents img {
+		display: inline-block; 
+		margin: auto; 
+		float: left;
+		 } 
+
+#contents h1 {		
+	        display: block;
+		width: 630px; 
+		margin-left: 288px; margin-top:0px; margin-bottom:8px;
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 800;	
+		font-size: 40px; color: #FF0000;
+  		font-style: normal;
+		}
+
+#contents h2 {		
+	        display: block;
+		max-width: 630px; 
+		margin-left:290px; margin-top:0px; margin-bottom:0px;
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 400;
+		font-size: 24px; color: #6A6A6A;
+  		font-style: normal;}
+
+#contents h3 {		
+	        display: block;
+		max-width: 630px;
+		margin-left:290px; margin-top:-6px; 
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 700;
+		font-size: 18px; color: #F29122;
+  		font-style: normal;}
+table, th, td {
+	        display: block;
+		margin-left:290px; margin-top:24px; margin-bottom:32px;
+		border-bottom: 1px solid #D9D9D9; border-top: 1px solid #D9D9D9;
+		border-collapse: collapse;}
+th, td {	padding: 5px; }
+th {
+	width: 120px;
+	text-align: center;
+	background-color: #EEEEEE;
+	border-left: 1px solid #D9D9D9;
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 400;
+		font-size: 18px; color: #333;
+  		font-style: normal;}
+
+
+td {
+	width: 440px;
+	/*white-space: no-wrap;
+	overflow: hidden; 
+	text-overflow: ellipsis; */
+	text-align: left;
+	background-color: #FFF;
+	border-right: 1px solid #D9D9D9;
+	padding-left: 16px;
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 500;
+		font-size: 18px; color: #0067A1;
+  		font-style: normal;}
+	
+
+#contents p {		
+	        display: block;
+		margin-left:300px;
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 500;
+		font-size: 18px;
+  		font-style: normal;}
+
+#copyright { 
+		text-align: center; 
+		padding-top : 12px;
+		font-family: "Noto Sans KR", sans-serif;
+		letter-spacing: -0.02em;
+		opacity: 0.6;
+		text-shadow: 1px -1px rgba(0,0,0,0.4); }
+</style>
+
+
+<body>
+<br><br>
+	<div id="header">
+		<img src="./logo.png" alt="로고">
+	</div>
+
+	<div id="contents">
+		<img src="./img.png" alt="차단">
+		<h1>인터넷 유해사이트 차단</h1>
+		<!--h1는 공백포함 최대 20자 정도로 사용해야 줄바뀜이 안됨-->
+		<h2>해당 사이트는 사내 규정에 의하여<br>비업무 및 악성코드 배포 등 유해사이트로 접속이 제한됩니다.</h2>
+<table>
+	<tr>
+	<th>카테고리</th>
+	<td>비업무 사이트</td>
+	</tr>
+	<tr>
+	<th>접속 URL</th>
+	<td>www.naver.com</td>
+	</tr>
+	<tr>
+	<th>사용자 IP</th>
+	<td>1.1.1.1</td>
+</tr>
+</table>
+		<h3>업무상 접속 허용 요청은 경영기획실장에게 아래 내용을 메일로 요청하시기 바랍니다.<br>
+(※ 내용 : 부서/팀, 사용자 이름, IP 대역, 필요 기간, 사유, 차단메시지 캡처사진) </h3>
+	</div>
+
+
+<div id="copyright">
+<font color="#fff" size="2"> 
+Copyright 2024 SOMANSA Co., Ltd. all rights reserved. </font>
+</div>
+</body>
+</html>

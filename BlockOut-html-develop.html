@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<style> 
+
+body { 
+	background-color: #0071B0; } /* 흰색 #fff, 하늘 #1F82BA, 파랑 #0067A1, 회색 #333 */
+
+#header {
+		background-color: #E5E8EF;
+		width: 1000px; 
+		height: 100px;
+		padding: 0px; /*안쪽여백*/
+		margin: auto; /*바깥쪽여백 자동 정렬이 가운데정렬*/
+		box-sizing: border-box;  /*여백을 넣어도 박스가 안 커지게 하는 코드*/ 
+		border-radius: 12px 12px 0px 0px;
+		text-align: center; color: gray; line-height: 100px; 
+		display: flex; justify-content: center;}
+		
+#header img { /*로고 영역 잡아주기*/
+		height: 54px;
+ 		padding: 0px; 
+		display: block; margin: auto; 
+		}
+
+#contents {
+		background-color: #FFF;
+		width: 1000px; 
+		min-height: 430px;  /*텍스트 컨텐츠에 따라 달라지게 변경*/
+		/*상대 단위,  vh. 뷰포트 세로 크기의 100% 차지. */  
+		padding-left: 36px; padding-top: 44px; padding-right: 20px; 
+		padding-bottom: 30px;/*안쪽여백*/
+		margin: auto; /*바깥쪽여백 자동 정렬이 가운데정렬*/
+		box-sizing: border-box;  /*여백을 넣어도 박스가 안 커지게 하는 코드*/
+		border-radius: 0px 0px 12px 12px; 
+		letter-spacing: -0.04em; 
+}
+
+#contents img {
+		display: inline-block; 
+		margin: auto; 
+		float: left;
+		 } 
+
+#contents h1 {		
+	        display: block;
+		width: 630px; 
+		margin-left: 288px; margin-top:0px; margin-bottom:8px;
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 800;	
+		font-size: 40px; color: #FF0000;
+  		font-style: normal;
+		}
+
+#contents h2 {		
+	        display: block;
+		max-width: 630px; 
+		margin-left:290px; margin-top:0px; margin-bottom:0px;
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 400;
+		font-size: 24px; color: #6A6A6A;
+  		font-style: normal;}
+
+#contents h3 {		
+	        display: block;
+		max-width: 630px;
+		margin-left:290px; margin-top:-6px; 
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 700;
+		font-size: 18px; color: #F29122;
+  		font-style: normal;}
+table, th, td {
+	        display: block;
+		margin-left:290px; margin-top:24px; margin-bottom:32px;
+		border-bottom: 1px solid #D9D9D9; border-top: 1px solid #D9D9D9;
+		border-collapse: collapse;}
+th, td {	padding: 5px; }
+th {
+	width: 120px;
+	text-align: center;
+	background-color: #EEEEEE;
+	border-left: 1px solid #D9D9D9;
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 400;
+		font-size: 18px; color: #333;
+  		font-style: normal;}
+
+
+td {
+	width: 440px;
+	/*white-space: no-wrap;
+	overflow: hidden; 
+	text-overflow: ellipsis; */
+	text-align: left;
+	background-color: #FFF;
+	border-right: 1px solid #D9D9D9;
+	padding-left: 16px;
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 500;
+		font-size: 18px; color: #0067A1;
+  		font-style: normal;}
+
+#contents p {		
+	        display: block;
+		margin-left: 290px;
+		text-align: left;
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+		font-weight: 400;
+		font-size: 23px; color: #6A6A6A;
+  		font-style: normal;
+		line-height:120%;}
+
+p a { font-size: 16px; color: #0067A1;font-weight: 500;}
+a:visited { color: #0067A1;}
+a:hover { color: #F29122;}
+a:active { color: #F29122;} /*마우스로 눌렀을때*/
+
+#copyright { 
+		text-align: center; 
+		padding-top : 12px;
+		font-family: "Noto Sans KR", sans-serif;
+		letter-spacing: -0.02em;
+		opacity: 0.6;
+		text-shadow: 1px -1px rgba(0,0,0,0.4); }
+</style>
+
+
+<body>
+<br><br>
+	<div id="header">
+		<img src="./logo-pv.png" alt="로고">
+	</div>
+
+	<div id="contents">
+		<img src="./img.png" alt="차단">
+		<h1>인터넷 사용 제한</h1>
+		<!--h1는 공백포함 최대 20자 정도로 사용해야 줄바뀜이 안됨-->
+		<h2>Privacy-i 에이전트 미설치/미로그인 사용자는 <br>인터넷 사용이 제한됩니다. </h2> 
+
+<p>랜섬웨어 감염 방지를 위해 Privacy-i AV/EDR 설치 부탁드립니다. <br>
+<a href="https://drive.somansa.com/d/f/tXSv4g3FnIEONespMncifSrHdGJToMc5"> Privacy-i 에이전트 다운로드</a></p>
+
+<table>
+	<tr>
+	<th>사용자 IP</th>
+	<td>1.1.1.1</td>
+	</tr>
+	<tr>
+	<th>접속 URL</th>
+	<td>www.naver.com</td>
+	</tr>
+</tr>
+</table>
+
+		<h3>Privacy-i를 설치하지 않고 사내 네트워크에 접속 필요 시, <br>팀장 및 본부장 결재 승인을 받아주시기 바랍니다. <br> (※ 노츠 기안서 양식 : 사내 네트워크 접속 허용 요청의 건) </h3>
+	</div>
+
+
+<div id="copyright">
+<font color="#fff" size="2"> 
+Copyright 2024 SOMANSA Co., Ltd. all rights reserved. </font>
+</div>
+</body>
+</html>
